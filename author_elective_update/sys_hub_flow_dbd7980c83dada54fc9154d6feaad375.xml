@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Flow to check for overdue NeedIt Tasks, close the overdue tasks, update the work notes for the task with a reason, and log the automatic closure.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>find_and_close_the_overdue_tasks</internal_name>
+        <label_cache>[{"name":"b2ddb022-6a02-4f59-81f3-3c5aa7713370.Records","label":"3 - Look Up Records➛x_58872_needit_needit_task Records","reference":"x_58872_needit_needit_task","reference_display":"x_58872_needit_needit_task Records","type":"records","base_type":"records","usedInstances":{"7c6da50a-13e1-47d1-8bf1-2c8f15b97458":["reason"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b2ddb022-6a02-4f59-81f3-3c5aa7713370.Table","label":"3 - Look Up Records➛x_58872_needit_needit_task Table","reference":"x_58872_needit_needit_task","reference_display":"x_58872_needit_needit_task Table","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a758b667-d2ec-4fb6-95c3-83e602b2d789.calculated_date","label":"2 - Get Days Ago Date➛Calculated date","type":"string","base_type":"string","usedInstances":{"b2ddb022-6a02-4f59-81f3-3c5aa7713370":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"d27a2532-78ef-4367-ad97-1e1ecd11dcc5"}},{"name":"b3867222-8b7d-4f35-8391-cd1667bee68e.property_value","label":"1 - Get Property➛Property value","reference_display":"Property value","type":"string","base_type":"string","usedInstances":{"a758b667-d2ec-4fb6-95c3-83e602b2d789":["days_ago"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"35b6df90-657d-459d-afee-bad129eb6767"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Find and close the overdue tasks,</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 22:44:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dbd7980c83dada54fc9154d6feaad375</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Find and close the overdue tasks,</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_dbd7980c83dada54fc9154d6feaad375</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 23:02:27</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_variable_value action="DELETE" query="document_key=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=dbd7980c83dada54fc9154d6feaad375^sys_idNOT IN5fd7d088831eda54fc9154d6feaad326"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>dbd7980c83dada54fc9154d6feaad375</id>
+        <name>Find and close the overdue tasks,</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 22:44:22</sys_created_on>
+        <sys_id>5fd7d088831eda54fc9154d6feaad326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 22:44:22</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=5fd7d088831eda54fc9154d6feaad326"/>
+    <sys_hub_flow_input action="DELETE" query="model=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_hub_flow_output action="DELETE" query="model=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=dbd7980c83dada54fc9154d6feaad375^sys_idNOT IN5af79408831eda54fc9154d6feaad3d7"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Find and close the overdue tasks,">dbd7980c83dada54fc9154d6feaad375</flow>
+        <name>Weekly</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 22:44:51</sys_created_on>
+        <sys_id>5af79408831eda54fc9154d6feaad3d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 22:51:25</sys_updated_on>
+        <trigger_definition display_value="Weekly">cf352104c32222002841b63b12d3ae1f</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+1S32vbMBD+V4KeXSPHaZv5rVACe9gKa+keSjFn65yIyZImy0m9kv99J9vJstYdjO2xRg/W3em+H3wPz0xBgYpl7Bq6malmXxG/sYhJ7dFpUHedRWoK6HJT5buhWYMW4I3rWOZdixEzTqBjWcIjtgXV4m3XfBT0jGY11K8X9ENUPad/IRuroLsfSysnaZbq5UYq4VCz7OExYhYcLfIB5flFSwak8mJ5DglflOmcPs7ny0VSXKRFMhcpoEhp4bTQSX5+SvWJSHzyqAUScAWqwQlHHIK40ao7TmzI0cGRGp4a+YP2L3iYq5CUlDj0yo2RJd5YL40eKh4KdWga1db680A4OIcVtMofnKNK22Au0AZuAW2Erm43ZvflALSSutcxNpUpQR1v4L2TReuxCT6jwpoW5TVYK/U6t85sZf+YuNTxWtElrpTZEWgj1zqGMhCPyQqIV1S/7sv34GRQ8YnW0ON9rzr/3gbcQcfIOB9E74+hWElUY46a0knrrwhgiyPdffQrvXeSXHkV255h7ofe26l9O7bj00Nekw+X/IwndGbzNOOczl8nFS4Xf0hqsjxJ6ijqdy5+Qtqpkv+TzX7Vezj/IZyPPwFt0GENXAUAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>weekly</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=dbd7980c83dada54fc9154d6feaad375^sys_idNOT IN16795440835eda54fc9154d6feaad336,1e795440835eda54fc9154d6feaad336,52795440835eda54fc9154d6feaad335"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Get Days Ago Date">46e4fdb383ced654fc9154d6feaad3d6</action_type>
+        <action_type_parent display_value="Get Days Ago Date">16c8e977838ad654fc9154d6feaad383</action_type_parent>
+        <attributes/>
+        <comment>Use the Get Days Ago Date action to calculate the overdue date to compare against due dates.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Find and close the overdue tasks,">dbd7980c83dada54fc9154d6feaad375</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 22:51:25</sys_created_on>
+        <sys_id>16795440835eda54fc9154d6feaad336</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 22:54:30</sys_updated_on>
+        <ui_id>a758b667-d2ec-4fb6-95c3-83e602b2d789</ui_id>
+        <values>H4sIAAAAAAAA/6WRT4vbMBDFv0rROTaO7DhOboVlodB2odvuZVnMWBolAlnWynJ23ZDv3pEd7yG9FHrUmz/vzU/PZ6Yl2zOBWCjZ5FUuUJabQondelPIUiGAzBVnK2ahReqUMPY1HDpSTmCGKJ3PNFhuOedJ1WxlUqh8k1T5bp0IuS7LbYNYVpg63zn0YaynucuFNkjdOwPj038vEkdtpEfL9s8vK+bAU9iAnu3PN6UwOqwNNGjI7zF4bQ80/q8MlsE7gvBphvA3lmhBSr8s77yMSdYrhu8BrUQyU2B6XLEWrITQ+ZHtgx9I8AjywZrxo+OobaBlLPa+9/o3ba6yLIudCukqgXNVHDst8MEF3dlZCdCYpdiZobXf56QROyoYTFiwkzL0WEt0MV30u5qrx2P39mMxutd2OuRaNJ0A8/GCQOc2Q8A+Mh/0zxsIs/L1FjwabMmxbsE5Umr62pOeXCh0mx4MPVJlujdK1+uDTUHEC1OiBuk96XeT/ARex3O/0Roajna/rH4d8Ev82ExwvssqnvACRVLwBhIA3CYZ0N/mDd+JqmCXCWn9OsSjZkhXHPVMlBp64bULnynCCa+XX17+AJfDjWZDAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>Find open NeedIt Tasks with a Due date older than the number of days set in the property.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Find and close the overdue tasks,">dbd7980c83dada54fc9154d6feaad375</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 22:51:25</sys_created_on>
+        <sys_id>1e795440835eda54fc9154d6feaad336</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 23:02:27</sys_updated_on>
+        <ui_id>b2ddb022-6a02-4f59-81f3-3c5aa7713370</ui_id>
+        <values>H4sIAAAAAAAA/9VX207jMBD9lSrPbZU0bRp4W4GQ9gGQAPHCguXYTmvhOtnY6YWq/7Lfsl+24zhJSy9QukWCp8r2jOfMzDkT92HucOqcOmHcdV3s9cK+6/q+6waBT7AXRX5AIjfqRk7TkXjEwFLjSDBYjrHIzXqKemHY7yDJGOW6+tFYPYMR5SoVeHa/jy0ZckEzJp3Th8emk+IM4mmWOafztSM9SxkSOGICrrwzcBpXBltz71ReOW+mZgJUSyTt1UlGDRa36bCpZpIyCBVjoVjTGWFJsU6yWb2TMUyvpVhuDLnUcKNjjKeKv8D1oWvsYgZpEWbPyDDhhF2nmifS7lhE9jAR+UheWaSmtCzGudBVaWEnVwxRlhpwJloZOr4dJpObKtAFl0Ue5aFICBb1Cmud8SjXTJmiM8FGcBEa4TTlcoDSLBnzwhmwjNoDAYt2LJIJBFV8INuYGOBtqAVuX8D+ebF9jzNusriEa8AZAHEBbUW2uirJsyL9MSIiV8VBhqWydzmLokbod25Q2qzL/JAtERgokvFU/wCHMStTWTT3onXPXfaeJBK4CDHVCreVxpr9ysGXek80h/JWazKf434vjIKg36IdRlrdOApaJz3it0KfBW4n6tB+eNKG8pJcgBctfBeLTVF8TpDD1HS2WoV9K7jVeVtZS1292it15R1NVwD3s5Wls/zrCes9qdiE39EL6b/Z7d6ysSrJNLKVWxHMJrsPpuIFZ4K+Gux7gKucrw2rGtFsF96SibGJsTbhO99nwn9JHgIgimxhuRRcFl9SAHocgrpvj6OTtYYXfV6Z52YPK7JJU9zQSePl8LlZ9LUi6h4gK8dbQNS4syi3AK8mZnV9yVH/aBz1Ozs4Cgx5mNcw6/JsqWT1MjI9quxfjD1etwcarTh4i8ea42eHxfQ+GrNjYq6J0P+QClcpZE/OdzDpyM+xHapqfqaMh+BaxkNWlWjC6YDpZfTKiiZ6gsXztvNSarVYivT++2nXfVNkgbcUFJAdZUxBq1bfdh68EzbngPf3j90/bA78lJoNiurti7HyvMTTxk0NcivychjwOkZJ6u4R305H/WJVJd6qk7rS3+Jvy6FsffwHR2l8YWEPAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Get Property">637f6a238346d254fc9154d6feaad32a</action_type>
+        <action_type_parent display_value="Get Property">c6658ae383069254fc9154d6feaad3bd</action_type_parent>
+        <attributes/>
+        <comment>Get the value of the x_58872_needit.autoCloseOverdue application property to determine how old a task should be to automatically close it.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Find and close the overdue tasks,">dbd7980c83dada54fc9154d6feaad375</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 22:51:25</sys_created_on>
+        <sys_id>52795440835eda54fc9154d6feaad335</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 22:54:30</sys_updated_on>
+        <ui_id>b3867222-8b7d-4f35-8391-cd1667bee68e</ui_id>
+        <values>H4sIAAAAAAAA/41Ry27bMBD8lYJnWbAelmXfigYBArRx0KS5BIGwJlc2AYpkKNKxGuTfs7SsFHAvOXJ2dufBpzcmBVuzarlsK8iLuigrkS/Klq+yRSmqFgFEkQuWMA0dEtM6Y9H5gZADqBChb8dmUdfLvNGIQvoUgjc/lOlxc0AniJIwIXurYHj8+gbfSyUcarZ+ek6YBUfyHh1bv12M/GCxUbBFRYfvvZN6R+tfTTUt3v2L9X/QKEFIPx03TkQnWcLw6FELJLEWVI8J60AL8MYNbO1dIMAhiI1WwydjL7WnYyxyj738S5fr+XwemS1SKo7jlO+N5LixXho9Ih62ahoaFTp9OzqN/WILQfmpX0JCj41AG91FvbN4e783r78noWupT0HOQ2U4qM8XeIq7DR772HmQDxcljMjPy+JRYUeKTQfWEtJQjQd5UiHTXbpT9EhbZV7JXS93OgUeE6bUGqTXhF+d4EdwMsb9RWdoOcr90fIl4E382GUp8rpa4UwUBczKvMpmW47ZjLerecmzVVUXwN5PlTYvIYYaSzrX0YyNEqHnTlr/nSwc8Jz8/fkDk1ps0xUDAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=dbd7980c83dada54fc9154d6feaad375^sys_idNOT IN487a5880835eda54fc9154d6feaad317"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE">
+        <attributes/>
+        <comment>Update each overdue NeedIt Task with the Handle Overdue NeedIt Tasks subflow.</comment>
+        <display_text/>
+        <flow display_value="Find and close the overdue tasks,">dbd7980c83dada54fc9154d6feaad375</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <subflow display_value="Handle Overdue NeedIt Tasks">2c93eff3830a9a54fc9154d6feaad3f5</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/8VVXU/bMBT9K5Ofm8qJkybtG9KEhLaBBIwXiqIb+5pac5OQOEBX9b/vJk2gFFZVPGyPvl/nnmMf+XbNjGIzBuFUBELEieAwhSjUcupHoZpoBFDC99mI5bBEqqwQ6iKn8yPYpg2s11mgVMaDwJsAD7xQR1Mv8bXwhIwA4tinuXx8ibKoVL3ZUKsydWlhdfP5CXJhrKowZ7PbuxEroaLlHFZstt5LuVWJqYUMLQFducrk99R+LOeh8XIgvS9CO57O9TCYFmy38EcMnx3mCglIg61xxJaQK3BFtXqJ0BR1kdvXwMLkjqaxtvi5Nr9pdMI5bys1EiWJ26xcFEbiRekMLdFFHGR2SBa2Webn20VbsVFDY90gNkWaGlOFZbtei9eD66tF8XQ5AJ2avGPSJ20hwb6cwBHfrHFYt4I35npPhW3k+77qaHFJiOkSypIiaVkVj6ZDoaWX43tLh7G2xRNtV5v7fAyyZTgm2WB8SvGvXfgGKtPS/UFjqLmF+5mbhwbP2ltVmQphqiMvS2LhhRx9LwkyellSTjAIuJQiY5tO0vShaUltRerlSLeKUkEtK1O6E1rhEXvmm1Fvl1geejrh9PWl5IjKuNRB/WvXM/PBA3M2m7Pzs+uTq2+cC879ORvNt3VdKkQV4iTWiQiD6B0Sj7ry7va78uc0SpI4SHvYHfSusF7VqVFHDv7AqZ923su7Gsx3hIJD7zmROHNfegk/1LW3YbWD0jsxOOxEVzVHGlEEb234d6UPGvRw23+z7q5yb927e3P/xMDTKEomSejTNxBzLxSZ9pIkAy+OMhCxRh0q/9MGvvsDACvxu/EGAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 22:55:37</sys_created_on>
+        <sys_id>487a5880835eda54fc9154d6feaad317</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 22:59:11</sys_updated_on>
+        <ui_id>7c6da50a-13e1-47d1-8bf1-2c8f15b97458</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_hub_flow_variable action="DELETE" query="model=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=dbd7980c83dada54fc9154d6feaad375"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>e9ec096d1bdef1107d9d2f8dee4bcb4b</instance_id>
+        <instance_name>dev203221</instance_name>
+        <name>sys_hub_flow_dbd7980c83dada54fc9154d6feaad375</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes><authored_on_release_version>26000</authored_on_release_version><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description>Flow to check for overdue NeedIt Tasks, close the overdue tasks, update the work notes for the task with a reason, and log the automatic closure.</description><display_name_after_preview/><flow_priority>MEDIUM</flow_priority><generation_source/><internal_name>find_and_close_the_overdue_tasks</internal_name><label_cache>[{"name":"b2ddb022-6a02-4f59-81f3-3c5aa7713370.Records","label":"3 - Look Up Records➛x_58872_needit_needit_task Records","reference":"x_58872_needit_needit_task","reference_display":"x_58872_needit_needit_task Records","type":"records","base_type":"records","usedInstances":{"7c6da50a-13e1-47d1-8bf1-2c8f15b97458":["reason"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b2ddb022-6a02-4f59-81f3-3c5aa7713370.Table","label":"3 - Look Up Records➛x_58872_needit_needit_task Table","reference":"x_58872_needit_needit_task","reference_display":"x_58872_needit_needit_task Table","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a758b667-d2ec-4fb6-95c3-83e602b2d789.calculated_date","label":"2 - Get Days Ago Date➛Calculated date","type":"string","base_type":"string","usedInstances":{"b2ddb022-6a02-4f59-81f3-3c5aa7713370":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"d27a2532-78ef-4367-ad97-1e1ecd11dcc5"}},{"name":"b3867222-8b7d-4f35-8391-cd1667bee68e.property_value","label":"1 - Get Property➛Property value","reference_display":"Property value","type":"string","base_type":"string","usedInstances":{"a758b667-d2ec-4fb6-95c3-83e602b2d789":["days_ago"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"35b6df90-657d-459d-afee-bad129eb6767"}}]</label_cache><latest_snapshot/><master_snapshot/><master_snapshot_digest/><name>Find and close the overdue tasks,</name><natlang/><outputs/><pre_compiled>false</pre_compiled><remote_trigger_id/><run_as>user</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><substatus/><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-30 22:44:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dbd7980c83dada54fc9154d6feaad375</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Find and close the overdue tasks,</sys_name><sys_overrides/><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_hub_flow_dbd7980c83dada54fc9154d6feaad375</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-30 23:02:27</sys_updated_on><type>flow</type><version>2</version></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=dbd7980c83dada54fc9154d6feaad375"/><sys_variable_value action="delete_multiple" query="document_key=dbd7980c83dada54fc9154d6feaad375"/><sys_hub_flow_stage action="delete_multiple" query="flow=dbd7980c83dada54fc9154d6feaad375"/><sys_flow_cat_variable_model action="delete_multiple" query="id=dbd7980c83dada54fc9154d6feaad375^sys_idNOT IN5fd7d088831eda54fc9154d6feaad326"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>dbd7980c83dada54fc9154d6feaad375</id><name>Find and close the overdue tasks,</name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-30 22:44:22</sys_created_on><sys_id>5fd7d088831eda54fc9154d6feaad326</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-30 22:44:22</sys_updated_on></sys_flow_cat_variable_model><sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5fd7d088831eda54fc9154d6feaad326"/><sys_hub_flow_input action="delete_multiple" query="model=dbd7980c83dada54fc9154d6feaad375"/><sys_hub_flow_output action="delete_multiple" query="model=dbd7980c83dada54fc9154d6feaad375"/><sys_hub_alias_mapping action="delete_multiple" query="source_id=dbd7980c83dada54fc9154d6feaad375"/><sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=dbd7980c83dada54fc9154d6feaad375^sys_idNOT IN5af79408831eda54fc9154d6feaad3d7"/><sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"><comment/><display_text/><flow display_value="Find and close the overdue tasks,">dbd7980c83dada54fc9154d6feaad375</flow><name>Weekly</name><remote_sys_id/><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-30 22:44:51</sys_created_on><sys_id>5af79408831eda54fc9154d6feaad3d7</sys_id><sys_mod_count>1</sys_mod_count><sys_scope/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-30 22:51:25</sys_updated_on><trigger_definition display_value="Weekly">cf352104c32222002841b63b12d3ae1f</trigger_definition><trigger_inputs>H4sIAAAAAAAA/+1S32vbMBD+V4KeXSPHaZv5rVACe9gKa+keSjFn65yIyZImy0m9kv99J9vJstYdjO2xRg/W3em+H3wPz0xBgYpl7Bq6malmXxG/sYhJ7dFpUHedRWoK6HJT5buhWYMW4I3rWOZdixEzTqBjWcIjtgXV4m3XfBT0jGY11K8X9ENUPad/IRuroLsfSysnaZbq5UYq4VCz7OExYhYcLfIB5flFSwak8mJ5DglflOmcPs7ny0VSXKRFMhcpoEhp4bTQSX5+SvWJSHzyqAUScAWqwQlHHIK40ao7TmzI0cGRGp4a+YP2L3iYq5CUlDj0yo2RJd5YL40eKh4KdWga1db680A4OIcVtMofnKNK22Au0AZuAW2Erm43ZvflALSSutcxNpUpQR1v4L2TReuxCT6jwpoW5TVYK/U6t85sZf+YuNTxWtElrpTZEWgj1zqGMhCPyQqIV1S/7sv34GRQ8YnW0ON9rzr/3gbcQcfIOB9E74+hWElUY46a0knrrwhgiyPdffQrvXeSXHkV255h7ofe26l9O7bj00Nekw+X/IwndGbzNOOczl8nFS4Xf0hqsjxJ6ijqdy5+Qtqpkv+TzX7Vezj/IZyPPwFt0GENXAUAAA==</trigger_inputs><trigger_outputs/><trigger_type>weekly</trigger_type></sys_hub_trigger_instance_v2><sys_hub_action_instance_v2 action="delete_multiple" query="flow=dbd7980c83dada54fc9154d6feaad375^sys_idNOT IN16795440835eda54fc9154d6feaad336,1e795440835eda54fc9154d6feaad336,52795440835eda54fc9154d6feaad335"/><sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"><action_type display_value="Get Days Ago Date">46e4fdb383ced654fc9154d6feaad3d6</action_type><action_type_parent display_value="Get Days Ago Date">16c8e977838ad654fc9154d6feaad383</action_type_parent><attributes/><comment>Use the Get Days Ago Date action to calculate the overdue date to compare against due dates.</comment><compiled_snapshot/><display_text/><flow display_value="Find and close the overdue tasks,">dbd7980c83dada54fc9154d6feaad375</flow><generation_source/><order>2</order><parent_ui_id/><sys_class_name>sys_hub_action_instance_v2</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-30 22:51:25</sys_created_on><sys_id>16795440835eda54fc9154d6feaad336</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-30 22:54:30</sys_updated_on><ui_id>a758b667-d2ec-4fb6-95c3-83e602b2d789</ui_id><values>H4sIAAAAAAAA/6WRT4vbMBDFv0rROTaO7DhOboVlodB2odvuZVnMWBolAlnWynJ23ZDv3pEd7yG9FHrUmz/vzU/PZ6Yl2zOBWCjZ5FUuUJabQondelPIUiGAzBVnK2ahReqUMPY1HDpSTmCGKJ3PNFhuOedJ1WxlUqh8k1T5bp0IuS7LbYNYVpg63zn0YaynucuFNkjdOwPj038vEkdtpEfL9s8vK+bAU9iAnu3PN6UwOqwNNGjI7zF4bQ80/q8MlsE7gvBphvA3lmhBSr8s77yMSdYrhu8BrUQyU2B6XLEWrITQ+ZHtgx9I8AjywZrxo+OobaBlLPa+9/o3ba6yLIudCukqgXNVHDst8MEF3dlZCdCYpdiZobXf56QROyoYTFiwkzL0WEt0MV30u5qrx2P39mMxutd2OuRaNJ0A8/GCQOc2Q8A+Mh/0zxsIs/L1FjwabMmxbsE5Umr62pOeXCh0mx4MPVJlujdK1+uDTUHEC1OiBuk96XeT/ARex3O/0Roajna/rH4d8Ev82ExwvssqnvACRVLwBhIA3CYZ0N/mDd+JqmCXCWn9OsSjZkhXHPVMlBp64bULnynCCa+XX17+AJfDjWZDAwAA</values></sys_hub_action_instance_v2><sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"><action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type><action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent><attributes/><comment>Find open NeedIt Tasks with a Due date older than the number of days set in the property.</comment><compiled_snapshot/><display_text/><flow display_value="Find and close the overdue tasks,">dbd7980c83dada54fc9154d6feaad375</flow><generation_source/><order>3</order><parent_ui_id/><sys_class_name>sys_hub_action_instance_v2</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-30 22:51:25</sys_created_on><sys_id>1e795440835eda54fc9154d6feaad336</sys_id><sys_mod_count>3</sys_mod_count><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-30 23:02:27</sys_updated_on><ui_id>b2ddb022-6a02-4f59-81f3-3c5aa7713370</ui_id><values>H4sIAAAAAAAA/9VX207jMBD9lSrPbZU0bRp4W4GQ9gGQAPHCguXYTmvhOtnY6YWq/7Lfsl+24zhJSy9QukWCp8r2jOfMzDkT92HucOqcOmHcdV3s9cK+6/q+6waBT7AXRX5AIjfqRk7TkXjEwFLjSDBYjrHIzXqKemHY7yDJGOW6+tFYPYMR5SoVeHa/jy0ZckEzJp3Th8emk+IM4mmWOafztSM9SxkSOGICrrwzcBpXBltz71ReOW+mZgJUSyTt1UlGDRa36bCpZpIyCBVjoVjTGWFJsU6yWb2TMUyvpVhuDLnUcKNjjKeKv8D1oWvsYgZpEWbPyDDhhF2nmifS7lhE9jAR+UheWaSmtCzGudBVaWEnVwxRlhpwJloZOr4dJpObKtAFl0Ue5aFICBb1Cmud8SjXTJmiM8FGcBEa4TTlcoDSLBnzwhmwjNoDAYt2LJIJBFV8INuYGOBtqAVuX8D+ebF9jzNusriEa8AZAHEBbUW2uirJsyL9MSIiV8VBhqWydzmLokbod25Q2qzL/JAtERgokvFU/wCHMStTWTT3onXPXfaeJBK4CDHVCreVxpr9ysGXek80h/JWazKf434vjIKg36IdRlrdOApaJz3it0KfBW4n6tB+eNKG8pJcgBctfBeLTVF8TpDD1HS2WoV9K7jVeVtZS1292it15R1NVwD3s5Wls/zrCes9qdiE39EL6b/Z7d6ysSrJNLKVWxHMJrsPpuIFZ4K+Gux7gKucrw2rGtFsF96SibGJsTbhO99nwn9JHgIgimxhuRRcFl9SAHocgrpvj6OTtYYXfV6Z52YPK7JJU9zQSePl8LlZ9LUi6h4gK8dbQNS4syi3AK8mZnV9yVH/aBz1Ozs4Cgx5mNcw6/JsqWT1MjI9quxfjD1etwcarTh4i8ea42eHxfQ+GrNjYq6J0P+QClcpZE/OdzDpyM+xHapqfqaMh+BaxkNWlWjC6YDpZfTKiiZ6gsXztvNSarVYivT++2nXfVNkgbcUFJAdZUxBq1bfdh68EzbngPf3j90/bA78lJoNiurti7HyvMTTxk0NcivychjwOkZJ6u4R305H/WJVJd6qk7rS3+Jvy6FsffwHR2l8YWEPAAA=</values></sys_hub_action_instance_v2><sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"><action_type display_value="Get Property">637f6a238346d254fc9154d6feaad32a</action_type><action_type_parent display_value="Get Property">c6658ae383069254fc9154d6feaad3bd</action_type_parent><attributes/><comment>Get the value of the x_58872_needit.autoCloseOverdue application property to determine how old a task should be to automatically close it.</comment><compiled_snapshot/><display_text/><flow display_value="Find and close the overdue tasks,">dbd7980c83dada54fc9154d6feaad375</flow><generation_source/><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance_v2</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-30 22:51:25</sys_created_on><sys_id>52795440835eda54fc9154d6feaad335</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-30 22:54:30</sys_updated_on><ui_id>b3867222-8b7d-4f35-8391-cd1667bee68e</ui_id><values>H4sIAAAAAAAA/41Ry27bMBD8lYJnWbAelmXfigYBArRx0KS5BIGwJlc2AYpkKNKxGuTfs7SsFHAvOXJ2dufBpzcmBVuzarlsK8iLuigrkS/Klq+yRSmqFgFEkQuWMA0dEtM6Y9H5gZADqBChb8dmUdfLvNGIQvoUgjc/lOlxc0AniJIwIXurYHj8+gbfSyUcarZ+ek6YBUfyHh1bv12M/GCxUbBFRYfvvZN6R+tfTTUt3v2L9X/QKEFIPx03TkQnWcLw6FELJLEWVI8J60AL8MYNbO1dIMAhiI1WwydjL7WnYyxyj738S5fr+XwemS1SKo7jlO+N5LixXho9Ih62ahoaFTp9OzqN/WILQfmpX0JCj41AG91FvbN4e783r78noWupT0HOQ2U4qM8XeIq7DR772HmQDxcljMjPy+JRYUeKTQfWEtJQjQd5UiHTXbpT9EhbZV7JXS93OgUeE6bUGqTXhF+d4EdwMsb9RWdoOcr90fIl4E382GUp8rpa4UwUBczKvMpmW47ZjLerecmzVVUXwN5PlTYvIYYaSzrX0YyNEqHnTlr/nSwc8Jz8/fkDk1ps0xUDAAA=</values></sys_hub_action_instance_v2><sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=dbd7980c83dada54fc9154d6feaad375^sys_idNOT IN487a5880835eda54fc9154d6feaad317"/><sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE"><attributes/><comment>Update each overdue NeedIt Task with the Handle Overdue NeedIt Tasks subflow.</comment><display_text/><flow display_value="Find and close the overdue tasks,">dbd7980c83dada54fc9154d6feaad375</flow><generation_source/><order>4</order><parent_ui_id/><subflow display_value="Handle Overdue NeedIt Tasks">2c93eff3830a9a54fc9154d6feaad3f5</subflow><subflow_inputs>H4sIAAAAAAAA/8VVXU/bMBT9K5Ofm8qJkybtG9KEhLaBBIwXiqIb+5pac5OQOEBX9b/vJk2gFFZVPGyPvl/nnmMf+XbNjGIzBuFUBELEieAwhSjUcupHoZpoBFDC99mI5bBEqqwQ6iKn8yPYpg2s11mgVMaDwJsAD7xQR1Mv8bXwhIwA4tinuXx8ibKoVL3ZUKsydWlhdfP5CXJhrKowZ7PbuxEroaLlHFZstt5LuVWJqYUMLQFducrk99R+LOeh8XIgvS9CO57O9TCYFmy38EcMnx3mCglIg61xxJaQK3BFtXqJ0BR1kdvXwMLkjqaxtvi5Nr9pdMI5bys1EiWJ26xcFEbiRekMLdFFHGR2SBa2Webn20VbsVFDY90gNkWaGlOFZbtei9eD66tF8XQ5AJ2avGPSJ20hwb6cwBHfrHFYt4I35npPhW3k+77qaHFJiOkSypIiaVkVj6ZDoaWX43tLh7G2xRNtV5v7fAyyZTgm2WB8SvGvXfgGKtPS/UFjqLmF+5mbhwbP2ltVmQphqiMvS2LhhRx9LwkyellSTjAIuJQiY5tO0vShaUltRerlSLeKUkEtK1O6E1rhEXvmm1Fvl1geejrh9PWl5IjKuNRB/WvXM/PBA3M2m7Pzs+uTq2+cC879ORvNt3VdKkQV4iTWiQiD6B0Sj7ry7va78uc0SpI4SHvYHfSusF7VqVFHDv7AqZ923su7Gsx3hIJD7zmROHNfegk/1LW3YbWD0jsxOOxEVzVHGlEEb234d6UPGvRw23+z7q5yb927e3P/xMDTKEomSejTNxBzLxSZ9pIkAy+OMhCxRh0q/9MGvvsDACvxu/EGAAA=</subflow_inputs><sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-30 22:55:37</sys_created_on><sys_id>487a5880835eda54fc9154d6feaad317</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-30 22:59:11</sys_updated_on><ui_id>7c6da50a-13e1-47d1-8bf1-2c8f15b97458</ui_id><wait_for_completion>true</wait_for_completion></sys_hub_sub_flow_instance_v2><sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=dbd7980c83dada54fc9154d6feaad375"/><sys_hub_pill_compound action="delete_multiple" query="attached_to=dbd7980c83dada54fc9154d6feaad375"/><sys_hub_flow_variable action="delete_multiple" query="model=dbd7980c83dada54fc9154d6feaad375"/><sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_dbd7980c83dada54fc9154d6feaad375"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_dbd7980c83dada54fc9154d6feaad375"/><sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_dbd7980c83dada54fc9154d6feaad375"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_dbd7980c83dada54fc9154d6feaad375"/><sys_flow_trigger_plan action="delete_multiple" query="plan_id=dbd7980c83dada54fc9154d6feaad375"/><sys_flow_subflow_plan action="delete_multiple" query="plan_id=dbd7980c83dada54fc9154d6feaad375"/></record_update>]]></payload>
+        <payload_hash>-350733849</payload_hash>
+        <record_name>Find and close the overdue tasks,</record_name>
+        <reverted_from/>
+        <source>7e8e5f1a83719a54fc9154d6feaad361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 23:02:27</sys_created_on>
+        <sys_id>080c9808835eda54fc9154d6feaad330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1937f4faa7d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 23:02:27</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>4c0c98087b5eda5491e7ddbdda10cd2f</update_guid>
+        <update_guid_history>4c0c98087b5eda5491e7ddbdda10cd2f:-350733849,d04b98c05f5eda5415182796ff7d9224:1031711687,047a5880e85eda543ded741412a61820:-190934104,b32ad080545eda54e6041c1b166723dc:602555763,aa795440aa5eda54908ca74e0864c73e:-2119115703,1ef790c8dc1eda54493df5f93bddf4d7:-185481301,97d7d0880f1eda5408c1efe6f97e7b2a:1451011769</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 23:30:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>4db0b08dab7349e0a482aa4968e71a40</sys_id>
+        <sys_metadata>dbd7980c83dada54fc9154d6feaad375</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Find and close the overdue tasks,</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_dbd7980c83dada54fc9154d6feaad375</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_dbd7980c83dada54fc9154d6feaad375">080c9808835eda54fc9154d6feaad330</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 23:30:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
